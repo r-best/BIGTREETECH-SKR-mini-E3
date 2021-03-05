@@ -433,7 +433,7 @@
  * Define one or both of these to override the default 0-255 range.
  */
 //#define FAN_MIN_PWM 50
-//#define FAN_MAX_PWM 128
+#define FAN_MAX_PWM 100
 
 /**
  * FAST PWM FAN Settings
@@ -1101,7 +1101,7 @@
    * LED Control Menu
    * Add LED Control to the LCD menu
    */
-  //#define LED_CONTROL_MENU
+  #define LED_CONTROL_MENU
   #if ENABLED(LED_CONTROL_MENU)
     #define LED_COLOR_PRESETS                 // Enable the Preset Color menu option
     //#define NEO2_COLOR_PRESETS              // Enable a second NeoPixel Preset Color menu option
@@ -1111,7 +1111,7 @@
       #define LED_USER_PRESET_BLUE         0  // User defined BLUE value
       #define LED_USER_PRESET_WHITE      255  // User defined WHITE value
       #define LED_USER_PRESET_BRIGHTNESS 255  // User defined intensity
-      //#define LED_USER_PRESET_STARTUP       // Have the printer display the user preset color on startup
+      #define LED_USER_PRESET_STARTUP       // Have the printer display the user preset color on startup
     #endif
     #if ENABLED(NEO2_COLOR_PRESETS)
       #define NEO2_USER_PRESET_RED        255  // User defined RED value
@@ -1119,7 +1119,7 @@
       #define NEO2_USER_PRESET_BLUE         0  // User defined BLUE value
       #define NEO2_USER_PRESET_WHITE      255  // User defined WHITE value
       #define NEO2_USER_PRESET_BRIGHTNESS 255  // User defined intensity
-      //#define NEO2_USER_PRESET_STARTUP       // Have the printer display the user preset color on startup for the second strip
+      #define NEO2_USER_PRESET_STARTUP       // Have the printer display the user preset color on startup for the second strip
     #endif
   #endif
 
@@ -1661,7 +1661,7 @@
 #define LIN_ADVANCE
 #if ENABLED(LIN_ADVANCE)
   //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants
-  #define LIN_ADVANCE_K 0.00    // Unit: mm compression per 1mm/s extruder speed
+  #define LIN_ADVANCE_K 0.22    // Unit: mm compression per 1mm/s extruder speed
   //#define LA_DEBUG            // If enabled, this will generate debug information output over USB.
   //#define EXPERIMENTAL_SCURVE   // Enable this option to permit S-Curve Acceleration
 #endif

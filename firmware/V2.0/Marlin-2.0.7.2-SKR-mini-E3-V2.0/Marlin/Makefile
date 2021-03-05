@@ -120,7 +120,7 @@ U8GLIB             ?= 0
 TMC                ?= 0
 
 # This defines whether to include the AdaFruit NeoPixel library
-NEOPIXEL           ?= 0
+NEOPIXEL           ?= 1
 
 ############
 # Try to automatically determine whether RELOC_WORKAROUND is needed based
